@@ -5,7 +5,33 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-def add(a, b): 
-    pass
+import math
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)# raise ValueError if a < 0
 
+def hypotenuse(a, b):
+    return math.hypot(a, b) # can have negative nums
 
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if a == 0:
+        raise ZeroDivisionError
+    return b / a   # raise ZeroDivisionError if a == 0
+
+def logarithm(a, b): # raise
+    if a <= 0 or b <= 0:
+        raise ValueError
+    return logarithm(a, b)# use math library/raise ValueError
+
+def exponent(a, b):
+    return a ** b
