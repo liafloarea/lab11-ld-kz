@@ -1,3 +1,10 @@
+"""
+calculator.py
+- Defines functions used to create a simple calculator
+
+One function per operation, in order.
+"""
+# First example
 import math
 
 def square_root(a):
@@ -19,11 +26,19 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    # raise ZeroDivisionError if a == 0
+def div(a, b):
     if a == 0:
-        raise ZeroDivisionError('division by zero')
-    return b / a
+        raise ZeroDivisionError
+    return b / a   # raise ZeroDivisionError if a == 0
+
+<<<<<<< HEAD
+def log(a, b): # raise
+    if a <= 0 or b <= 0:
+        raise ValueError
+    return logarithm(a, b)# use math library/raise ValueError
+
+def exp(a, b):
+    return a ** b
 
 def logarithm(a, b):
     # use math library + raise ValueError
