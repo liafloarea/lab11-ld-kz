@@ -1,4 +1,15 @@
 import math
+
+def square_root(a):
+    # raise ValueError if a < 0
+    if a < 0:
+        raise ValueError('negative value')
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    # can have negative nums
+    returnmath.hypot(a, b)
+
 def add(a, b):
     return a + b
 
