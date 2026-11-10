@@ -26,7 +26,7 @@ def div(a, b):
 
 def logarithm(a, b):
     # use math library + raise ValueError
-    if a <= 0:
+    if a <= 0 or b <= 0:
         raise ValueError('negative value')
     return math.log(a, b)
 
