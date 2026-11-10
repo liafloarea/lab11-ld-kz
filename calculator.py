@@ -8,7 +8,7 @@ def square_root(a):
 
 def hypotenuse(a, b):
     # can have negative nums
-    returnmath.hypot(a, b)
+    return math.hypot(a, b)
 
 def add(a, b):
     return a + b
