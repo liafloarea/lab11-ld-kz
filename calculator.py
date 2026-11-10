@@ -9,10 +9,10 @@ import math
 def add(a, b):
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
-def mul(a, b):
+def multiply(a, b):
     return a * b
 
 def div(a, b):
@@ -20,6 +20,7 @@ def div(a, b):
         raise ZeroDivisionError
     return b / a   # raise ZeroDivisionError if a == 0
 
+<<<<<<< HEAD
 def log(a, b): # raise
     if a <= 0 or b <= 0:
         raise ValueError
@@ -27,3 +28,12 @@ def log(a, b): # raise
 
 def exp(a, b):
     return a ** b
+
+def logarithm(a, b):
+    # use math library + raise ValueError
+    if a <= 0:
+        raise ValueError('negative value')
+    return math.log(a, b)
+
+def exponent(a, b):
+    return a**b
